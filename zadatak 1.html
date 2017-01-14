@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+<link href="https://fonts.googleapis.com/css?family=Roboto:100" type="text/css" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+
+<header><img src="headerOsijek031.JPG" alt="Osijek031"></header><br>
+
+<div id="container">
+	<div id="nav">
+			<p><a href="http://www.osijek031.hr">Novosti</a></p> 
+			<p><a href="http://www.osijek031.com/osijek.php?cat_id=13">Gospodarstvo</a></p>
+			<p><a href="http://www.osijek031.com/osijek.php?cat_id=1">Kultura</a></p>
+			<p><a href="http://www.osijek031.com/osijek.php?cat_id=3">Noćni život</a></p>
+	</div>
+
+	<div id="content">
+		<p class="naslov">Osijek031</p>
+		<p class="podnaslov">Aktivnosti u Osijeku</p>
+	</div>
+	
+	<div id="widget">
+		<video width="320" height="240" controls>
+		<source src="movie.mp4" type="video/mp4">
+		</video>
+	</div>  
+</div>
+
+<div id="map" style="width:30%;height:300px"></div>
+<script>
+	function myMap() {
+  		var mapCanvas = document.getElementById("map");
+  		var mapOptions = {
+    	center: new google.maps.LatLng(45.5541111, 18.6938889), 
+   		zoom: 14
+  	}
+  	var map = new google.maps.Map(mapCanvas, mapOptions);
+	}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>	
+
+</body>
+</html>

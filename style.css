@@ -1,0 +1,78 @@
+* { 
+  border: solid 1px rbg(0 0 0 0.6%);
+  box-sizing: border-box;
+}
+
+header{
+	text-align: center;
+}
+
+a:link {
+    color: red;
+}
+
+a:visited {
+    color: green;
+}
+
+a:hover {
+    color: blue;
+	text-decoration: underline;
+}
+
+a:active {
+    color: blue;
+}
+
+p.naslov {
+	font-size: 28px;
+	text-align: center;
+	font-weight: bold;
+	font-family: "Playfair Display", serif;
+}
+
+p.podnaslov {
+	font-size: 20px;
+	text-align: center;
+	font-family: Roboto;
+}
+
+#container {
+	position: relative;
+	top: 60px;
+	padding-left: 20px;
+	padding-right: 20px;
+	
+}
+
+#nav {
+	float: left;
+	width: 20%;
+	padding: 20px 0 20px 80px;
+	height: 100%;
+	font-size: 18px;
+	font-family: Roboto;
+}
+
+#content {
+	float: left;
+	width: 54%;
+	height: 300px;
+	text-align: center;
+	padding: 5px 20px;
+}
+
+#widget {
+	float: right;
+}
+
+#footer {
+	clear: both;
+}
+
+#map{
+	float: right;
+	padding-right: 60px;
+	top: 40px;
+	right: 30px;
+}
